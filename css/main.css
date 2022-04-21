@@ -1,0 +1,1231 @@
+body { 
+  color: #1e1e1e;
+  background-color: #e8eff2;
+}
+#plastics_bg {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 3;
+}
+#plastics_bg2 {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.reverse section.main {
+  position:fixed;
+}
+
+.reverse #plastics_bg, .reverse #plastics_bgMain {
+  transform: scaleY(-1);
+}
+.reverse #plastics_bg2 {
+  transform: scaleY(-1);
+}
+.p {
+  z-index: 10;
+  margin-top: -3%;
+  left: 50%;
+  top: -3000px;
+  width: 2px;
+  height: 2px;
+  position: absolute;
+  /* transition: all 1s ease; */
+}
+.p img {
+  width: 2vw;
+  max-width: 100px;
+  min-width: 30px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+section {
+  overflow: hidden;
+  position: relative;
+  z-index: 10;
+}
+section.main {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  z-index: 11;
+}
+section.main .logo{
+  position: absolute;
+  left:4%;
+  top:4%;
+  z-index: 10;
+  font-size:20px;
+  font-weight: 300;
+}
+section.main .nav{
+  position: absolute;
+  right:4%;
+  top:4%;
+  z-index: 10;
+  font-size:24px;
+  font-weight: 800;
+}
+section.main .bg {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(12, 41, 84, 0.8), rgba(0, 0, 0, 0.3)), url('../images/v_top.jpg') center center no-repeat;
+  background-size: cover;
+  position: absolute;
+  transition: all .3s ease;
+}
+
+section.main .bgMain {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: url('../images/a.jpg') center center no-repeat;
+  background-size: cover;
+  position: absolute;
+  transition: all .3s ease;
+}
+
+section.main h2 {
+  position: relative;
+  z-index: 2;
+  margin: 0 auto;
+  color: #fff;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 70.3vw;
+  font-size: 47px;
+  line-height: 1.35;
+  font-weight:bolder;
+  text-align: center;
+  transition: all .3s ease;
+}
+
+section.main .pageTwo {
+  color:white;
+}
+
+section.area{
+  position:relative;
+  z-index: 10;
+  width:100%;
+
+
+}
+h4.middle{
+  position:fixed;
+  font-family: "Noto Serif Display";
+  font-size:7.5vw;
+
+}
+h2.big {
+  text-transform: uppercase;
+  overflow: hidden;
+  white-space:nowrap;
+  font-family: "Noto Serif Display";
+  padding-top:13vw;
+  padding-bottom:20vw;
+  font-size: 8.3vw;
+  opacity: 1;
+  z-index: 2;
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+.reverse h2.big {
+  font-size:10vw;
+  padding-bottom:10vw;
+}
+.cl1{
+  color:#0c2954;
+}
+.cl2{
+  color:#eea56c;
+}
+.cl3{
+color:#84a9a1;
+}
+.h2 {
+  font-family: "Noto Serif Display";
+  font-size: 210px;
+  opacity: 1;
+  z-index: 2;
+  text-transform: uppercase;
+  width: 100vw;
+  text-align: center;
+  position: relative;
+  top:50%;
+}
+.fixed {
+  position: fixed;
+}
+.left {
+  text-align: left;
+}
+.right {
+  text-align: right;
+}
+.normal {
+  position: relative;
+  z-index: 10;
+  box-sizing: border-box;
+  padding: 45px;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 20vh;
+  background: rgba(255, 255, 255, 0.7);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  font-size: 1.4vw;
+  line-height: 1.5;
+}
+.subTitle {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align:center;
+}
+
+.noBox {
+  background: rgba(255, 255, 255, 0);
+}
+.noMargin {
+  margin-top: 1vh;
+}
+.littleMargin {
+  margin-top:13vh;
+}
+.largeMargin {
+  margin-top:55vh;
+}
+.bottomMargin {
+  margin-bottom:35vh;
+}
+
+.particles {
+  top: 0;
+  margin-top: -20000px;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index:8;
+}
+.stacked {
+  margin-top: 50px;
+  top: 100%;
+  transition: all .5s ease;
+  width: 70%;
+  height: 100%;
+  position: absolute;
+  z-index:-2;
+}
+.stacked .p{
+
+  transition: all 0s ease !important;
+}
+.reverse .stacked {
+  margin-top: -50px;
+  top: 0%;
+}
+.add_motion {
+  transition: all .5s ease;
+}
+.reverse .particles {
+  margin-top: -50vh;
+}
+nav{
+  display: none;
+  position:fixed;
+  left:20px;
+  /* margin-left:-200px; */
+  top:50%;
+  transform: translateY(-50%);
+  z-index: 15;
+  transition: all .3s ease;
+}
+nav ul li{
+  cursor: pointer;
+  padding:10px 0px;
+  line-height: 40px;
+  font-size:18px;
+  font-weight:500;
+  position:relative;
+  padding-left:20px;
+  color:rgba(0,0,0,0.75);
+}
+nav ul li:after{
+  position:absolute;
+  left:0px;
+  top:26px;
+  width:10px;
+  height:10px;
+  background:rgba(0,0,0,0.2);
+  border-radius: 50%;
+  display: inline-block;
+  content:"";
+}
+nav ul li.active{
+  color:#0c2954;
+}
+nav ul li.active:after{
+    background:hsl(216, 75%, 19%);
+}
+
+
+/* 추가 */
+.mx1100{max-width: 1100px; margin: 0 auto;}
+.mx1200{max-width: 1200px; margin: 0 auto;}
+.comImg{width: 100%;}
+
+.contIn{background-color: white;
+  box-sizing: border-box;}
+.introHeadBox{text-align: center;}
+.introHeadCon{}
+.introHead{font-size: 24px;
+  font-weight: 600;
+  color: #1e1e1e;
+  line-height: 1;}
+.introSub{font-weight: 400;
+  font-size: 16px;
+  word-break: keep-all;
+  line-height: 1.8;
+  margin-right: 20px;
+  text-align: left;}
+.introImg{min-width: 300px;
+  margin-right: 40px;;}
+.space{padding-top: 180vh;}
+.bottle{}
+.search{z-index: 10;padding-top: 80px;
+  padding-bottom: 100px;}
+.search .contIn{padding: 30px;}
+.bottleBtnList{display: flex;
+  padding: 35px 30px;
+  box-sizing: border-box;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+}
+.bottleBtnList li{width: 14.28%;
+  box-sizing: border-box;
+  margin: 0.5%;
+  line-height: 48px;
+  height: 50px;
+  border-radius: 50px;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  color: #002841;
+  list-style: none;
+  text-align: center;
+  overflow: hidden;}
+.bottleBtnList .btnAct{background-color: #002841; color: white;}
+.bottleDtlList{position: relative;
+  box-sizing: border-box;}
+.bottleRs{position: absolute;
+  display: none;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.7);
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+  box-sizing: border-box;}
+.bottleRs .in{display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;}
+.bottleRs .in .con{}
+.bottleRs .in .con .img{width: 100%;
+  max-width: 240px;
+  margin: 0 auto;
+  margin-bottom: 40px;}
+.bottleRs .in .con .head{font-size: 34px;
+  text-align: center;
+  color: #41ad49;
+  font-weight: 500;}
+.bottleRs .in .con .btnList{margin-top: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;}
+.bottleRs .in .con .btnList button{width: 200px;
+  height: 40px;
+  line-height: 38px;
+  border: 1px solid white;
+  border-radius: 40px;
+  background-color: transparent;
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
+  margin: 0 10px;
+  cursor: pointer;}
+.bottleRs .in .con .btnList button:hover{background-color: rgba(255,255,255,0.1);}
+.bottleRs .in .con .close{display: flex;
+  justify-content: center;
+  margin-bottom: 20px;}
+.bottleRs .in .con .close .rsClose{width: 40px;
+  height: 40px;
+  border: 1px solid white;
+  background-color: transparent;
+  border-radius: 30px;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;}
+.surveyInput .survey{display: flex;
+  justify-content: space-between;
+  align-items: center;}
+.surveyInput .survey p{    font-size: 30px;
+  font-weight: 600;
+  line-height: 1.2;}
+.noAnswer{margin-top: 50px; display: none;}
+.noAnswer .answer{display: flex;
+  justify-content: space-between;}
+.noAnswer .answer > p{font-size: 20px;
+  font-weight: 400;
+  line-height: 1.8;}
+.noAnswer .answer span{min-width: 180px;}
+.noAnswer .answer span img{max-width: 100px;
+  margin: 0 auto;
+  display: block;
+}
+.noAnswer .answer span > p{color: #e44061;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 20px;}
+.noAnswer .answerBtn{text-align: center;
+  margin-top: 80px;}
+.noAnswer .answerBtn button{width: 240px;
+  height: 44px;
+  line-height: 42px;
+  font-size: 20px;
+  border: 1px solid #e44061;
+  border-radius: 44px;
+  background-color: white;
+  color: #e44061;
+  cursor: pointer;}
+  .noAnswer .answerBtn button:hover{background-color: #e44061; color: white;}
+.bottleDtlUnit{display: flex; display: none;}
+.bottleDtlUnit .bottleDtlCon{width: 100%;}
+.bottleDtlImg{min-width: 360px;}
+.bottleCopyBox{width: 100%; margin-left: 40px;}
+.bottleHead{font-size: 22px;
+  color: #002841;
+  font-weight: 600;
+  margin-bottom: 30px;}
+.bottleCopy{font-size: 18px;
+  font-weight: 400;
+  line-height: 1.8;
+  word-break: keep-all;}
+.searchLabel{margin: 20px 0 10px 0;
+  margin-bottom: 45px;
+  width: 100%;
+  background-color: #002841;
+  height: 60px;
+  line-height: 40px;
+  text-align: center;
+  padding: 10px;
+  box-sizing: border-box;}
+.searchLabel h3{color: white;
+  font-size: 20px;
+  font-weight: 600;
+  word-break: keep-all;}
+  .searchConBox{padding-bottom: 80px;}
+  .searchConIn{border: 1px solid #dcdcdc;
+    display: flex;
+    align-items: end;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 100%;
+    justify-content: space-between;}
+  .searchUnit{width: 100%;
+    margin-right: 20px;}
+  .searchTitle{font-size: 18px;
+    margin-bottom: 6px;}
+  .comSelct{}
+  .comInput, .comSelct{height: 40px;
+    width: 100%;
+    padding: 6px;
+    box-sizing: border-box;
+    font-size: 18px;
+    border: 1px solid #969696;
+    outline: none;
+    line-height: 38px;
+    background-color: #f5f5f5;}
+  .comBtn{min-width: 160px;
+    height: 40px;
+    border: none;
+    background-color: #1e1e1e;
+    color: white;
+    font-size: 18px;
+    line-height: 40px;
+    cursor: pointer;}
+  .searchInfoBox{display: none;}
+  .seachInfo{display: flex;
+    justify-content: space-between;
+    margin-top: 12px;}
+  .seachInfo b{color: #787878;
+    font-weight: 400;
+    font-size: 16px;}
+  .seachInfo .searchNum, .seachInfo .searchZip{color: #1e1e1e;
+    font-weight: 500;}
+  .searchWithIn{font-size: 15px;
+    font-weight: 500;
+    color: #969696;}
+  .searchRefCon{padding: 20px;
+    background-color: #f5f5f5;
+    margin-top: 40px;}
+  .searchRef{font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: #787878;
+    line-height: 1;}
+  .searchRefSub{color: #787878;
+    font-weight: 400;
+    font-size: 16px;}
+  .searchRefSub a{display: inline-block;
+    color: #787878;
+    font-weight: 500;
+    text-decoration: underline;}
+
+  .searchRsList{margin-top: 60px;}
+  .searchRsList .unit{padding: 20px;
+    box-shadow: 0px 0px 4px 4px rgb(0 0 0 / 5%);
+    display: flex; margin-bottom: 40px;}
+  .searchRsList .unit:last-child{margin-bottom: 0px;}
+  .searchRsList .unit .searchNum{font-size: 20px;
+    font-weight: 600;
+    margin-right: 20px;}
+  .searchUnitCon{width: 100%;}
+  .searchUnitHeadBox{display: flex;
+    justify-content: space-between;}
+  .searchUnitHead{font-size: 20px;
+    font-weight: 500;}
+  .searchMiles{font-size: 13px;
+    font-weight: 400;
+    color: #969696;}
+  .searchUnitInfo{margin-top: 20px;
+    display: flex;
+    justify-content: space-between;}
+  .searchMeterial{}
+  .searchMeterial .title{font-weight: 500;
+    font-size: 15px;}
+  .searchMeterial .title .pColor{font-weight: 500;
+    color: #002841;}
+  .searchMeterial .list{display: flex;
+    flex-wrap: wrap;
+    margin-top: 6px;}
+  .searchMeterial .list p{font-size: 15px;
+    font-weight: 400;
+    margin-right: 10px;
+    color: #787878;}
+  .searchMeterial .list .pColor{color: #002841;}
+  .searchUnitInfo .info{min-width: 300px;
+    text-align: right;}
+  .searchUnitInfo .info a{font-size: 15px;
+    font-weight: 400;
+    line-height: 1.4;}
+
+  .main .con{position: relative;
+    z-index: 10;}
+  .main .mainHeadCon{position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;}
+  .main .mainHead{display: flex;
+    justify-content: space-between;
+    padding: 0 5%;
+    box-sizing: border-box;
+    margin-top: 20px;
+    align-items: baseline;}
+  .main .mainHead > a{color: white;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 1; cursor: pointer;}
+    .main .mainHead > a:hover{color: #aadcfd; }
+  .main .mainHead .menu{text-align: right;}
+  .main .mainHead .menu > div{display: flex;
+    align-items: center;}
+  .main .mainHead .menu > div a{font-size: 16px;
+    color: white;
+    font-weight: 400;
+    cursor: pointer;
+    padding: 15px 0;}
+  .main .mainHead .menu > div .urlBtn{border: 1px solid white;
+    border-radius: 20px;
+    width: 110px;
+    text-align: center;
+    margin-left: 20px;
+    line-height: 38px;
+    box-sizing: border-box;
+    height: 40px;}
+  .main .mainHead .menu > div > span{
+    margin-left: 35px; cursor: pointer;
+    position: relative;}
+  .main .mainHead .menu > div > span > span.line_left{transition: all .4s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #aadcfd;}
+  .main .mainHead .menu > div > span > span.line_right{transition: all .4s;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #aadcfd;}
+  .main .mainHead .menu > div > span.headAct >span{width: 100%;}
+  .main .mainHead .menu > a{display: inline-block;
+    width: 60px;
+    margin-top: 20px;
+    cursor: pointer;
+    opacity: 0.5;}
+  .main .mainHead .menu > a:hover{opacity: 1;}
+  .popBox{position: absolute;
+    bottom: 20px;
+    width: 100%;
+    left: 0px;}
+  .popBox .in{width: 60px;
+    margin: 0 auto;}
+  .popBox .in .bottlePopBtn{opacity: 0.5; cursor: pointer;}
+  .popBox .in .bottlePopBtn:hover{opacity: 1;}
+  .mainBottle{width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;}
+  .mainBottle > div{}
+  .mainBottle > div > div{position: relative;}
+  .mainBottle > div > div .mainImg{width: 800px;
+    transform-origin: 50% 50%;
+    /* 위로  */
+    padding-top: 58px;
+    /* 오른쪽 */
+    padding-left: 5px;
+
+  }
+  .mainBottle > div > div .mainImg img{transition: all .2s;}
+  .mainBottle > div > div .mainNum{position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;}
+  .mainBottle > div > div .mainNum > div{display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+    flex-direction: column;}
+    .mainBottle > div > div .mainNum > div .mainCopy{width: 100%;
+      text-align: center;
+      margin-top: 27px;
+      font-size: 19px;
+      font-style:italic;
+      font-weight: 400;
+      color: white;}
+  .mainBottle > div > div .mainNum > div > div{position: relative;
+    width: 140px;
+    height: 140px;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: white;
+    margin-top: 57px;
+    border-radius: 10px;}
+  .mainBottle > div > div .mainNum div select{width: 100%;
+    height: 100%;
+    border: none;
+    font-size: 36px;
+    font-weight: 600;
+    color: #1e1e1e;
+    outline: none;
+    text-align: center;
+    cursor: pointer;}
+  .mainBottle > div > div .mainNum > div > div .mainLineBox{position: absolute;
+    bottom: 15px;
+    width: 100%;
+    left: 0;
+    padding: 0 15px;
+    box-sizing: border-box;}
+  .mainBottle > div > div .mainNum > div > div .mainLineBox .mainLine{width: 80%;
+    height: 4px;
+    background-color: #1e1e1e;
+    display: block;
+    border-radius: 4px;}
+  .bottlePop{position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.6);
+    display: none;
+    z-index: 20;}
+  .bottlePop > div{width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 0 5%;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;}
+  .bottlePop > div > div{max-width: 1000px;
+    margin: 0 auto;
+    border-radius: 20px;
+    overflow: hidden;}
+  .bottlePop .introCon{display: flex;}
+  .bottlePop .introHeadBox > .introHeadUnit{display: flex;
+    margin-top: 20px;
+    align-items: flex-start;
+    margin-bottom: 60px;
+    justify-content: center;}
+  .bottlePop .introHeadBox > button{min-width: 36px;
+    min-height: 36px;
+    border: 1px solid #1e1e1e;
+    border-radius: 30px;
+    font-size: 20px;
+    background-color: white;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    margin: 0 0 0 auto;
+    padding: 8px;
+    box-sizing: border-box;
+    width: 36px;}
+
+  .bottleDtlUnit .haed{font-size: 22px;
+    font-weight: 500;
+    margin-top: 30px;
+    text-align: center;
+    color: #002841;}
+  .bottleDtlUnit .bottleDtlCon .aboutBtn{text-align: center;
+    margin-top: 20px;}
+  .bottleDtlUnit .bottleDtlCon .aboutBtn button{width: 120px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 30px;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    color: #969696;
+    background-color: #f1f1f1;
+    cursor: pointer;}
+  .bottleDtlUnit .bottleDtlCon .bottleDtl{display: none;}
+  .bottleDtlUnit .bottleDtlCon .bottleDtl .bottleDtlIn{display: flex;
+    padding-top: 40px;
+    border-bottom: 1px solid #dcdcdc;
+    padding-bottom: 30px;}
+  .bottleDtlUnit .bottleDtlCon .bottleDtl .bottleDtlImg{}
+  .bottleDtlUnit .bottleDtlCon .bottleDtlSurvey{position: relative; margin-top: 35px; padding: 30px; padding-bottom: 60px;}
+  .bottleDtlUnit .bottleDtlCon .bottleDtlSurvey .surveyUnit{margin-bottom: 100px;}
+  .bottleDtlUnit .bottleDtlCon .bottleDtlSurvey .surveyUnit:nth-child(1n+3){display: none;}
+  .bottleDtlUnit .bottleDtlCon .bottleDtlSurvey .surveyUnit:last-child{margin-bottom: 50px;}
+  .bottleDtlUnit .bottleDtlCon .bottleDtlSurvey .surveyUnit > .surveyImgs{display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;}
+    .bottleDtlUnit .bottleDtlCon .bottleDtlSurvey .surveyUnit > div > span{width: 20%;
+    margin: 1%;}
+    .bottleDtlUnit .bottleDtlCon .bottleDtlSurvey .surveyUnit > div > span > p{text-align: center;
+      font-size: 16px;
+      margin-top: 20px;
+      word-break: keep-all;}
+    .bottleDtlUnit .bottleDtlCon .bottleDtlSurvey .surveyUnit > div > span > span{width: 100%;
+      margin: 1%;
+      box-sizing: border-box;
+      box-shadow: 0px 0px 4px 4px rgb(0 0 0 / 5%);
+      border-radius: 10px;
+      overflow: hidden;
+      display: flex;}
+  .bottleDtlUnit .bottleDtlCon .bottleDtlSurvey .surveyUnit > .surveyInput{
+    max-width: 830px;
+    margin: 0 auto;}
+  .bottleDtlUnit .bottleDtlCon .bottleDtlSurvey .surveyUnit > .surveyInput > p{font-size: 28px;
+    font-weight: 500;
+    word-break: keep-all;}
+  .bottleDtlUnit .bottleDtlCon .bottleDtlSurvey .surveyUnit > .surveyInput .surveyChk{min-width: 250px;
+    text-align: right;}
+  .bottleDtlUnit .bottleDtlCon .bottleDtlSurvey .surveyUnit > .surveyInput .surveyChk label{}
+  .bottleDtlUnit .bottleDtlCon .bottleDtlSurvey .surveyUnit > .surveyInput .surveyChk label input{display: none;}
+  .bottleDtlUnit .bottleDtlCon .bottleDtlSurvey .surveyUnit > .surveyInput .surveyChk label span{width: 100px;
+    display: inline-block;
+    text-align: center;
+    background-color: #f1f1f1;
+    height: 38px;
+    line-height: 38px;
+    border-radius: 20px;
+    color: #969696;
+    margin-left: 10px;
+    font-size: 20px;
+    cursor: pointer;}
+    .bottleDtlUnit .bottleDtlCon .bottleDtlSurvey .surveyUnit > .surveyInput .surveyChk label input:checked+span{background-color: #002841;
+      color: white;}
+      .bottleDtlUnit .bottleDtlCon .bottleDtlSurvey .surveyUnit > .surveyInput .surveyChk label input[value='N']:checked+span{background-color: #e44061;}
+  .bottleDtlUnit .bottleDtlCon .bottleDtlSurvey .surveyUnit > .surveyInput .surveyChk label span.surveyAct{}
+  .bottleDtl{}
+  .bottleDtlIn{padding: 50px 30px;}
+  .bottleDtlUnit .bottleDtlCon .aboutBtn button.bottleDtlAct{background-color: #1e1e1e; color: white;}
+
+  .surveyDone{}
+  .surveyDone button{}
+
+  .scrollTop{position: fixed;
+    display: none;
+    bottom: 30px;
+    right: 30px;
+    z-index: 12;}
+  .scrollTop button{background-color: transparent;
+    border: none;
+    width: 60px;
+    display: flex;
+    cursor: pointer;}
+.surveyRs{margin-top: 40px;
+  padding-top: 40px;
+  border-top: 1px dashed #dcdcdc;
+  padding-bottom: 20px;}
+.surveyRs .surveyD{}
+.surveyRs .surveyD p{text-align: center;
+  font-size: 22px;
+  font-weight: 500;
+  color: #dcdcdc;}
+
+.surveyRs .surveyY{text-align: center; display: none;}
+.surveyRs .surveyN{text-align: center; display: none;}
+.surveyRs .surveyY p{text-align: center;
+  font-size: 22px;
+  color: #41ad49;
+  font-weight: 500;
+  margin-bottom: 20px;}
+.surveyRs .surveyN p{text-align: center;
+  font-size: 22px;
+  color: #e44061;
+  font-weight: 500;
+  margin-bottom: 20px;}
+.surveyRs .surveyN .belowBtn{margin-top: 40px;
+  width: 240px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #e44061;
+  height: 50px;
+  line-height: 48px;
+  background-color: white;
+  border: 1px solid #e44061;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.surveyRs .surveyN .belowBtn:hover{background-color: #e44061; color: white;}
+.surveyRs .icon{width: 200px;
+  display: inline-block;}
+
+.baseRs{padding: 20px;
+  background-color: #f5f5f5;}
+.baseHead{font-weight: 600;
+  font-size: 20px;
+  color: #787878;}
+.baseSub{font-size: 16px;
+  font-weight: 400;
+  color: #787878;
+  margin-top: 10px;}
+.baseTitle{padding: 60px 0;
+  font-size: 60px;
+  font-weight: 600;
+  color: #787878;
+  text-align: center;}
+
+.dtl{padding-top: 80px;}
+.dtlList{}
+.dtlList .bottleDtl{display: none;}
+.dtlList .bottleDtl.show{display: block;}
+.dtlList .bottleDtl .bottleDtlIn{display: flex;}
+.dtlList .bottleDtl .bottleDtlIn .bottleDtlImg{min-width: 360px;}
+.dtlList .bottleDtl .bottleDtlIn .bottleCopyBox{}
+.dtlList .bottleDtl .bottleDtlIn .bottleCopyBox .bottleHead{}
+.dtlList .bottleDtl .bottleDtlIn .bottleCopyBox .bottleCopy{}
+.popInner{padding: 30px; padding-bottom: 80px;}
+.mainBottle > div > div .mainNum div select.defSelect{color: white;}
+.mainBottle > div > div .mainNum div select.defSelect:hover{color: #1e1e1e;}
+.mainBottle > div > div .mainNum > div > div .mainLineBox .mainLineIn{position: relative;}
+.mainLine{-webkit-animation: line_r_animation 3s infinite;
+  animation: line_r_animation 3s infinite;
+position: absolute;
+bottom:3px;}
+
+@-webkit-keyframes line_r_animation {
+    0%   {right: calc(2% + 100%); width: 0px;}
+    35%   {right: calc(2% + 0px); width: 100%;}
+    70%   {right: calc(2% + 0px); width: 0px;}
+    100%   {right: calc(2% + 0px); width: 0px;}
+}
+
+@keyframes line_r_animation {
+    0%   {right: calc(2% + 100%); width: 0px;}
+    35%   {right: calc(2% + 0px); width: 100%;}
+    70%   {right: calc(2% + 0px); width: 0px;}
+    100%   {right: calc(2% + 0px); width: 0px;}
+}
+
+
+/* .mainBottle > div > div .mainImg{
+  -webkit-animation: main_img_animation 3s infinite;
+  animation: main_img_animation 3s infinite;
+}
+
+@-webkit-keyframes main_img_animation {
+  0%   {transform: scale(0); transform: rotate(0);}
+  100%   {transform: scale(1.2); transform: rotate(360deg);}
+}
+
+@keyframes main_img_animation {
+  0%   {transform: scale(0); transform: rotate(0);}
+  100%   {transform: scale(1.2); transform: rotate(360deg);}
+} */
+
+.cardoB{font-family: 'cardo'; font-weight: 600 !important;}
+.NotoB{font-family: 'Noto'; font-weight: 600 !important;}
+.raleR{font-family: 'Raleway'; font-weight: 400 !important;}
+
+
+.bottleBtnList li{position: relative;}
+.bottleBtnList li a{backface-visibility: hidden; position: relative; color: #002841; cursor: pointer;
+  border: 1px solid #002841; border-radius: 50px;}
+.bottleBtnList li.btnAct a{color: white;}
+.bottleBtnList li a::after{
+  background-color: #002841;
+  border-radius: 50px;
+  content: '';
+  display: block;
+  height: 100%;
+  width: 101%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translate(-100%, 0) rotate(10deg);
+  transform-origin: top left;
+  transition: 0.2s transform ease-out;
+  will-change: transform;
+  z-index: -1;
+}
+.bottleBtnList li a:hover::after {
+  transform: translate(0, 0);
+}
+.bottleBtnList li a:hover {
+  border: 1px solid transparent;
+  color: white;
+  transform: scale(1.05);
+  will-change: transform;
+}
+
+/* .bottleBtnList li::before,
+  .bottleBtnList li::after{display: block;}
+  .bottleBtnList li::before{left: 0%;}
+  .bottleBtnList li::after{left: 75%;}
+  
+  
+  .bottleBtnList li a::before{left: 25%;}
+  .bottleBtnList li a::after{left: 50%;}
+  .bottleBtnList a:hover {
+    color: #ffffff;
+  }
+  .bottleBtnList li:before,
+  .bottleBtnList li:after,
+  .bottleBtnList a:before,
+  .bottleBtnList a:after {
+    background-color: #002841;
+    position: absolute;
+    width: 26%;
+    top: 50%;
+    bottom: 50%;
+    content: '';
+    z-index: -1;
+    opacity: 0;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+  .bottleBtnList li:before {
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+  }
+  .bottleBtnList li:after {
+    -webkit-transition-delay: 0.15s;
+    transition-delay: 0.15s;
+  }
+  .bottleBtnList a:before {
+    -webkit-transition-delay: 0.05s;
+    transition-delay: 0.05s;
+  }
+  .bottleBtnList a:after {
+    -webkit-transition-delay: 0.1s;
+    transition-delay: 0.1s;
+  }
+  .bottleBtnList li:hover:before,
+  .bottleBtnList li.current:before,
+  .bottleBtnList li:hover:after,
+  .bottleBtnList li.current:after,
+  .bottleBtnList li:hover a:before,
+  .bottleBtnList li.current a:before,
+  .bottleBtnList li:hover a:after,
+  .bottleBtnList li.current a:after {
+    top: 0;
+    bottom: 0;
+    opacity: 1;
+  }
+  .bottleBtnList li:hover:before,
+  .bottleBtnList li.current:before {
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+  }
+  .bottleBtnList li:hover:after,
+  .bottleBtnList li.current:after {
+    -webkit-transition-delay: 0.225s;
+    transition-delay: 0.225s;
+  }
+  .bottleBtnList li:hover a:before,
+  .bottleBtnList li.current a:before {
+    -webkit-transition-delay: 0.075s;
+    transition-delay: 0.075s;
+  }
+  .bottleBtnList li:hover a:after,
+  .bottleBtnList li.current a:after {
+    -webkit-transition-delay: 0.15s;
+    transition-delay: 0.15s;
+  } */
+
+  .main .mainBk > a{color: #fff;}
+  .main .mainBk .menu > div a{color: #fff;}
+  .lineAct span{width: 100% !important;}
+  .show424{display: none;}
+  .hide424{display: block;}
+  .areaMo{display: none;}
+
+@media(max-width:1199px){
+     .pd5{padding-left: 5%; padding-right: 5%; box-sizing: border-box;}
+     nav{display: none !important;}
+}
+
+@media (max-width:839px){
+  .main .mainHead > a{font-size: 18px;}
+  .main .mainHead .menu > div a{font-size: 14px;}
+  .main .mainHead .menu > div .urlBtn{width: 100px; height: 34px; line-height: 32px;}
+  .mainBottle{padding: 0 5%;}
+  .mainBottle > div > div .mainImg{max-width: 500px; width: 100%;  padding-top:26px; padding-left:2px;}
+  .bottlePop .introCon{flex-wrap: wrap;
+  justify-content: center;}
+  .introHeadCon{max-height: 160px;
+    overflow-y: auto;}
+  .bottleDtlUnit .bottleDtlCon .bottleDtl .bottleDtlIn{flex-wrap: wrap;
+    justify-content: center;}
+  .mainBottle > div > div .mainNum > div > div{width: 100px; height: 100px;}
+  .bottleBtnList{flex-wrap: wrap;}
+  .bottleBtnList li{width: 23%; margin: 1%; position: relative; overflow: hidden;}
+  .bottleBtnList li a{font-size: 16px;}
+  section.main h2{font-size: 34px;}
+  .normal{font-size: 14px;}
+
+
+
+
+  .bottleDtlUnit .haed{font-size: 20px;
+    word-break: keep-all;}
+  .bottleDtlUnit .bottleDtlCon .bottleDtl .bottleDtlImg{width: 100%; min-width: auto;}
+  .bottleCopyBox{margin-left: 0px;
+    margin-top: 30px;}
+    .dtlList .bottleDtl .bottleDtlIn .bottleCopyBox .bottleHead{margin-bottom: 20px;}
+  .bottleDtlUnit .bottleDtlCon .bottleDtlSurvey .surveyUnit > .surveyInput > p{font-size: 15px;}
+  .bottleDtlUnit .bottleDtlCon .bottleDtlSurvey .surveyUnit > div{flex-wrap: wrap;}
+  .bottleDtlUnit .bottleDtlCon .bottleDtlSurvey .surveyUnit > div > span{width: 29%; margin: 2%;}
+  .bottleDtlUnit .bottleDtlCon .bottleDtlSurvey .surveyUnit > .surveyImgs{justify-content: flex-start;}
+  .bottleDtlUnit .bottleDtlCon .bottleDtlSurvey .surveyUnit > div > span > p{font-size: 13px;}
+  .bottleDtlUnit .bottleDtlCon .bottleDtlSurvey .surveyUnit{margin-bottom: 80px;}
+  .bottleDtlUnit .bottleDtlCon .bottleDtlSurvey .surveyUnit > .surveyInput .surveyChk label span{font-size: 15px;}
+  .surveyRs .surveyN p{font-size: 20px;}
+  .surveyRs .icon{width: 180px;}
+  .surveyRs .surveyN .belowBtn{margin-top: 30px;}
+  .searchLabel h3{line-height: 1.2;
+    max-width: 400px;
+    margin: 0 auto;
+    font-size: 18px;}
+  .searchLabel{height: auto;}
+  .searchTitle{font-size: 14px;}
+  .comBtn{font-size: 14px; min-width: 80px;}
+  .comInput, .comSelct{font-size: 14px;}
+  .searchUnit{margin-right: 10px;}
+  .searchWithIn{font-size: 13px;}
+  .seachInfo b{font-size: 13px;}
+  .searchRef{font-size: 16px;}
+  .searchRefSub{font-size: 13px;}
+  .searchUnitHeadBox{flex-wrap: wrap;}
+  .searchUnitHead{width: 100%;
+    margin-bottom: 5px;
+    font-size: 16px;}
+  .searchRsList .unit .searchNum{font-size: 16px;}
+  .searchMeterial .title{font-size: 14px;}
+  .searchMeterial .list p{font-size: 14px;}
+  .searchUnitInfo .info a{font-size: 13px;}
+  .searchUnitInfo .info{min-width: 200px;}
+  .scrollTop button{width: 50px;}
+  .baseHead{font-size: 18px;}
+  .baseTitle{font-size: 48px;}
+  .surveyInput .survey{flex-wrap: wrap; justify-content: center;}
+  .surveyInput .survey p{}
+  .bottleDtlUnit .bottleDtlCon .bottleDtlSurvey .surveyUnit > .surveyInput .surveyChk label span{margin: 0 5px;}
+  .bottleDtlUnit .bottleDtlCon .bottleDtlSurvey .surveyUnit > .surveyInput .surveyChk{min-width: auto;}
+  .surveyInput .survey p{font-size: 24px; margin-bottom: 40px; width: 100%; text-align: center;}
+  .bottleRs .in .con .img{max-width: 180px;}
+  .bottleRs .in .con .head{font-size: 28px;}
+  .bottleRs .in .con .btnList button{font-size: 16px;
+    width: 140px;}
+    .noAnswer .answer > p{font-size: 14px;}
+    .dtlList .bottleDtl .bottleDtlIn{flex-wrap: wrap;}
+    .dtlList .bottleDtl .bottleDtlIn .bottleDtlImg{min-width: auto;}
+    .introImg{margin-right: 0px; margin-bottom: 20px;}
+    .noAnswer .answer{flex-wrap: wrap; flex-direction: column-reverse;}
+    .noAnswer .answer span{margin-bottom: 40px;}
+    .noAnswer .answer > p{text-align: center;}
+    .noAnswer{margin-top: 60px;}
+
+}
+
+@media(max-width:424px){
+  .main .mainHead .menu > div{flex-wrap: wrap;
+    justify-content: flex-end;max-width: 100px;}
+    .main .mainHead .menu > div .urlBtn{margin-top: 20px;}
+    .bottleBtnList li{width: 21%;
+      margin: 2%;
+      font-size: 15px;
+      height: 30px;
+      line-height: 28px;}
+    .bottleDtlUnit .haed{font-size: 16px;
+      word-break: keep-all;padding: 0 20px;}
+    .bottleDtlUnit .bottleDtlCon .aboutBtn button{width: 100px;
+      font-size: 14px;}
+      .mainBottle > div > div .mainNum > div > div{width: 80px; height: 80px; margin-top: 30px;}
+    .bottleHead{font-size: 14px;}
+    .bottleCopy{font-size: 12px;}
+    .bottleDtlUnit .bottleDtlCon .bottleDtlSurvey{margin-top: 40px;}
+    .bottleDtlUnit .bottleDtlCon .bottleDtlSurvey .surveyUnit > .surveyInput > p{width: 100%;
+      text-align: center;
+      margin-bottom: 10px;
+      font-size: 14px;}
+    .bottleDtlUnit .bottleDtlCon .bottleDtlSurvey .surveyUnit > .surveyInput .surveyChk{text-align: center;
+      width: 100%;}
+    .bottleDtlUnit .bottleDtlCon .bottleDtlSurvey .surveyUnit > .surveyInput .surveyChk label span{margin: 0 4px;
+      font-size: 14px;}
+    .bottleDtlUnit .bottleDtlCon .bottleDtlSurvey .surveyUnit > div > span > p{font-size: 12px;}
+    .surveyRs .surveyN p{font-size: 16px;}
+    .surveyRs .icon{width: 100px;}
+    .surveyRs .surveyN .belowBtn{font-size: 14px;
+      width: 180px;
+      height: 40px;
+      line-height: 38px;
+      margin-top: 20px;}
+      .surveyRs .surveyY p{font-size: 16px;}
+    .searchLabel h3{font-size: 14px;}
+    .searchConIn{flex-wrap: wrap;}
+    .searchUnit{margin-bottom: 20px; margin-right: 0px;}
+    .searchConIn{padding: 15px;}
+    .comBtn{width: 100%;}
+    .searchTitle{font-size: 12px;
+      margin-bottom: 3px;}
+    .searchLabel{margin-bottom: 40px;
+      margin-top: 20px;}
+    .seachInfo{flex-wrap: wrap;}
+    .seachInfo b{font-size: 12px;}
+    .searchWithIn{font-size: 12px;
+      margin-top: 5px;
+      text-decoration: underline;}
+    .searchRefCon{padding: 15px;}
+    .searchRef{font-size: 14px;}
+    .searchRefSub{font-size: 12px;}
+    .searchUnitInfo{flex-wrap: wrap;}
+    .searchRsList .unit{padding: 15px;}
+    .searchRsList .unit .searchNum{margin-right: 15px; font-size: 14px;}
+    .searchUnitHead{font-size: 14px; font-weight: 600;}
+    .searchMiles{font-size: 11px;}
+    .searchMeterial .title{font-size: 12px;}
+    .searchMeterial .list p{font-size: 12px;}
+    .searchUnitInfo .info{text-align: left;
+      margin-top: 10px;
+      padding-top: 10px;
+      border-top: 1px dashed #dcdcdc;
+      width: 100%;}
+    .searchUnitInfo .info a{font-size: 12px;}
+    .scrollTop{bottom: 20px;
+      right: 20px;}
+    .scrollTop button{width: 40px;}
+    .main .mainHead .menu > a{width: 40px;}
+    .introImg{min-width: auto; width: 100%; margin-right: 0px;}
+    .introHead{font-size: 16px;}
+    .introSub{font-size: 12px; margin-right: 0px;}
+    .searchConBox{padding-bottom: 60px;}
+    .baseHead{font-size: 14px;}
+    .baseSub{font-size: 12px;}
+    .baseTitle{font-size: 26px; padding: 40px 0;}
+    .surveyInput .survey p{font-size: 20px;}
+    
+    .noAnswer .answer span{margin-bottom: 20px;}
+    .noAnswer .answer > p{font-size: 12px;}
+    .noAnswer .answerBtn button{width: 220px;
+      font-size: 18px;}
+      .bottleDtlIn{padding: 20px;}
+      .bottleDtlUnit .bottleDtlCon .bottleDtlSurvey{padding: 20px; padding-bottom: 40px;}
+      .bottleRs .in .con .img{max-width: 120px;}
+      .bottleRs .in .con .head{font-size: 20px;}
+      .bottleRs .in .con .btnList button{font-size: 14px;
+        width: 120px;}
+      .bottleBtnList{padding: 20px;}
+      .bottleDtlUnit .bottleDtlCon .bottleDtlSurvey .surveyUnit > div > span{width: 46%; margin-bottom: 20px;}
+      .search .contIn{padding: 20px;}
+      .bottlePop .introHeadBox > .introHeadUnit{margin-bottom: 30px;}
+      .popInner{padding: 20px; padding-bottom: 40px;}
+      .main .mainHead .menu > div > span{margin-bottom: 10px; margin-left: 0px;}
+      .mainBottle > div > div .mainNum > div .mainCopy{font-size: 12px; margin-top:10px;}
+      .main .mainHead .menu > div a{padding: 10px 0;}
+      .mainBottle > div > div .mainNum > div > div .mainLineBox .mainLine{height: 3px;}
+      .mainBottle > div > div .mainNum > div > div .mainLineBox{bottom: 8px; padding: 0px 12px;}
+      .searchRsList{margin-top: 40px;}
+      section.main h2{font-size: 24px;
+        width: 100%;
+        max-width: 90%;}
+      .show424{display: block;}
+      .hide424{display: none;}
+      .normal{margin-top: 10vh;}
+      .noMargin{margin-top: 1vh;}
+
+      /* 헤더 버튼 reverse */
+      .main .mainHead{align-items: flex-start;}
+      .main .mainHead > a{margin-top: 8px;}
+      .main .mainHead .menu > div{flex-wrap: wrap-reverse;}
+      .area{display: none;}
+      .area h4{display: none;}
+      .areaMo{display: block;
+        text-align: center;
+        position: relative;
+        z-index: 4;
+        font-size: 7.5vw;
+        font-family: "Noto Serif Display";}
+      .area_01{color: #84a9a1;}
+      h2.big{padding-top: 30vw;}
+      .area_02{color: #eea56c; margin-top: 10vh;}
+      .area_03{color: #84a9a1;}
+}
+
+
+.show{display: flex;}
+
+.mainSelect { border-radius:0; /* 아이폰 사파리 보더 없애기 */ -webkit-appearance:none; /* 화살표 없애기 for chrome*/ -moz-appearance:none; /* 화살표 없애기 for firefox*/ appearance:none; /* 화살표 없애기 공통*/ }
+.mainSelect::-ms-expand{ display:none /* 화살표 없애기 for IE10, 11*/ }
