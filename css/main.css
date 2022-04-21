@@ -1101,6 +1101,8 @@ bottom:3px;}
 }
 
 @media(max-width:424px){
+  .bottom {margin-bottom:0;}
+  .mainBottle > div > div .mainNum div select {font-size:27px;}
   .main .mainHead .menu > div{flex-wrap: wrap;
     justify-content: flex-end;max-width: 100px;}
     .main .mainHead .menu > div .urlBtn{margin-top: 20px;}
