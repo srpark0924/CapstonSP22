@@ -2262,7 +2262,8 @@ $(function () {
 			// select change
 			$('.comSelct option:eq('+(no+1)+')').prop("selected",true);
 			$('.mainSelect option:eq('+(no+1)+')').prop("selected",true);
-      $('.mainSelect').removeClass('defSelect');
+      $('.selectWh').removeClass('selectWh');
+      $('.selectTitle ').html(no+1);
 
 			$('.dtl').find('.dtlList').find('.bottleDtl').removeClass('show');
 			$('.dtl').find('.dtlList').find('.bottleDtl:eq('+(no)+')').addClass('show');
@@ -2299,8 +2300,11 @@ $(function () {
 
 				$('.dtl').find('.dtlList').find('.bottleDtl').removeClass('show');
 				$('.dtl').find('.dtlList').find('.bottleDtl:eq('+(idx-1)+')').addClass('show');
-	
-				$('.mainSelect option:eq('+idx+')').prop("selected",true);
+        $('.comSelct option:eq('+(idx)+')').prop("selected",true);
+        $('.mainSelect option:eq('+(idx)+')').prop("selected",true);
+
+				$('.selectWh').removeClass('selectWh');
+        $('.selectTitle ').html(idx);
 
 				if(type == 'Y'){
 					var scrollHeight = $('.bottle').offset().top;
