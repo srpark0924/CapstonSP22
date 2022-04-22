@@ -1101,6 +1101,7 @@ bottom:3px;}
 }
 
 @media(max-width:424px){
+  .section.main h2{color: red;}
   .bottom {margin-bottom:0;}
   .mainBottle > div > div .mainNum div select {font-size:27px;}
   .main .mainHead .menu > div{flex-wrap: wrap;

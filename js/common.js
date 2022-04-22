@@ -2288,7 +2288,7 @@ $(function () {
 				var idx = $(this).find('option').index($(this).find('option:selected'));
 	
 				// bottleBtn change
-				$('.bottleBtnList').find('button').removeClass('btnAct');
+				$('.bottleBtnList').find('li').removeClass('btnAct');
 				$('.bottleBtnList').find('button:eq('+(idx-1)+')').addClass('btnAct');
 	
 				// bottleDtlChange
