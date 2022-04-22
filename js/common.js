@@ -2250,7 +2250,7 @@ $(function () {
 
 	// 보틀 #1~#7 버튼 클릭
 	$.bottleBtnClick = function(){
-		$('.bottleBtnList li').on('click',function(){
+		  $('.bottleBtnList li').on('click',function(){
 			$('.bottleBtnList li').removeClass('btnAct');
 			$(this).addClass('btnAct');
 
@@ -2262,6 +2262,7 @@ $(function () {
 			// select change
 			$('.comSelct option:eq('+(no+1)+')').prop("selected",true);
 			$('.mainSelect option:eq('+(no+1)+')').prop("selected",true);
+      $('.mainSelect').removeClass('defSelect');
 
 			$('.dtl').find('.dtlList').find('.bottleDtl').removeClass('show');
 			$('.dtl').find('.dtlList').find('.bottleDtl:eq('+(no)+')').addClass('show');
@@ -2281,15 +2282,16 @@ $(function () {
 	$.bottleCSelect = function(){
 		$('.searchUnit .comSelct, .mainSelect').on('change',function(){
 			var value = $(this).val();
+      var idx = $(this).find('option').index($(this).find('option:selected'));
 
 			if(value != 'false'){
+
+        $('.mainSelect').removeClass('defSelect');
 				var type = $(this).data('type');
-	
-				var idx = $(this).find('option').index($(this).find('option:selected'));
 	
 				// bottleBtn change
 				$('.bottleBtnList').find('li').removeClass('btnAct');
-				$('.bottleBtnList').find('button:eq('+(idx-1)+')').addClass('btnAct');
+				$('.bottleBtnList').find('li:eq('+(idx-1)+')').addClass('btnAct');
 	
 				// bottleDtlChange
 				$('.bottleDtlList').find('.bottleDtlUnit').removeClass('show');
@@ -2298,7 +2300,7 @@ $(function () {
 				$('.dtl').find('.dtlList').find('.bottleDtl').removeClass('show');
 				$('.dtl').find('.dtlList').find('.bottleDtl:eq('+(idx-1)+')').addClass('show');
 	
-				$('.comSelct option:eq('+idx+')').prop("selected",true);
+				$('.mainSelect option:eq('+idx+')').prop("selected",true);
 
 				if(type == 'Y'){
 					var scrollHeight = $('.bottle').offset().top;
@@ -2312,7 +2314,10 @@ $(function () {
 				$('.bottleDtlList').find('input[type=radio]').prop('checked',false);
 				$('.bottleDtlList').find('.noAnswer').hide();
 				$('.bottleDtlList').find('.bottleRs').hide();
-			}
+			}else{
+        $('.mainSelect option:eq('+idx+')').prop("selected",true);
+        $('.mainSelect').addClass('defSelect');
+      }
 
 		})
 	}

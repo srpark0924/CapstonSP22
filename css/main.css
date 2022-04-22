@@ -1226,6 +1226,9 @@ bottom:3px;}
       h2.big{padding-top: 30vw;}
       .area_02{color: #eea56c; margin-top: 10vh;}
       .area_03{color: #84a9a1;}
+      .reverse section.main{position: relative;}
+      html, body{overflow: auto !important;}
+      .space{padding-top: 100vh;}
 }
 
 
