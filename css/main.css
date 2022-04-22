@@ -1101,8 +1101,8 @@ bottom:3px;}
 
 }
 
-@media(max-width:579px){
-  .subTitle {font-size:18px;}
+@media(max-width:424px){
+  .subTitle {font-size:17px;}
   .bottom {margin-bottom:0;}
   .mainBottle > div > div .mainNum div select {font-size:27px;}
   .main .mainHead .menu > div{flex-wrap: wrap;
