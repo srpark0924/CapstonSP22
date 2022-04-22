@@ -1101,7 +1101,7 @@ bottom:3px;}
 
 }
 
-@media(max-width:424px){
+@media(max-width:454px){
   .subTitle {font-size:17px;}
   .bottom {margin-bottom:0;}
   .mainBottle > div > div .mainNum div select {font-size:27px;}
