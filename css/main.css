@@ -195,9 +195,10 @@ color:#84a9a1;
   line-height: 1.5;
 }
 .subTitle {
+  font-size:23px;
   display: block;
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: 35px;
   text-align:center;
 }
 
@@ -1101,7 +1102,7 @@ bottom:3px;}
 }
 
 @media(max-width:424px){
-  .section.main h2{color: red;}
+  .subTitle {font-size:18px;}
   .bottom {margin-bottom:0;}
   .mainBottle > div > div .mainNum div select {font-size:27px;}
   .main .mainHead .menu > div{flex-wrap: wrap;
@@ -1202,6 +1203,7 @@ bottom:3px;}
       .mainBottle > div > div .mainNum > div > div .mainLineBox{bottom: 8px; padding: 0px 12px;}
       .searchRsList{margin-top: 40px;}
       section.main h2{font-size: 24px;
+        color:red;
         width: 100%;
         max-width: 90%;}
       .show424{display: block;}
