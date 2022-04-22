@@ -1101,7 +1101,7 @@ bottom:3px;}
 
 }
 
-@media(max-width:424px){
+@media(max-width:579px){
   .subTitle {font-size:18px;}
   .bottom {margin-bottom:0;}
   .mainBottle > div > div .mainNum div select {font-size:27px;}
@@ -1203,7 +1203,6 @@ bottom:3px;}
       .mainBottle > div > div .mainNum > div > div .mainLineBox{bottom: 8px; padding: 0px 12px;}
       .searchRsList{margin-top: 40px;}
       section.main h2{font-size: 24px;
-        color:red;
         width: 100%;
         max-width: 90%;}
       .show424{display: block;}
